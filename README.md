@@ -67,11 +67,11 @@ I just call font->setColor(value); that's it.
 
 margin-top, margin-bottom, margin-left, font-size:
 these can have size values defined either as fixed size or relative size
-```XX px - fixed size in points
-XX pt - fixed size in points
-XX % - relative size in percentage
-XX em - relative size, similar to percentage
-+XX px/pt/%/em - absolute/relative size respectively, added to the current size (i.e. +50px -> use current size plus 50 more points)```
+- XX px - fixed size in points
+- XX pt - fixed size in points
+- XX % - relative size in percentage
+- XX em - relative size, similar to percentage
+- +XX px/pt/%/em - absolute/relative size respectively, added to the current size (i.e. +50px -> use current size plus 50 more points)```
 
 Code-wise, the approach has been changed completely. The visual
 appearance for every element is now stored only in s style string. These
