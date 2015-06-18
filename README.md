@@ -1,5 +1,5 @@
 # jzeleny_htmlimport
-refactoring of the HTML import plugin for better styles use
+# Refactoring of the HTML import plugin for better styles use
 
 - Original repo : 'public' branch of `git://fedorapeople.org/~jzeleny/scribus.git` 
 - Master mantis URL : http://bugs.scribus.net/view.php?id=11060
