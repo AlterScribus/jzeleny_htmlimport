@@ -1,4 +1,3 @@
-# jzeleny_htmlimport
 # Refactoring of the HTML import plugin for better styles use
 
 - Original repo : 'public' branch of `git://fedorapeople.org/~jzeleny/scribus.git` 
