@@ -43,30 +43,31 @@ List of supported tags:
 `ul, ol, li, pre, br, a, sup, sub, img, center, p, pre, div, h1 - h6, code, em, i, strong, b, u , ins, del`
 
 List of supported CSS attributes and allowed values:
-```font-weight: bold/normal
-font-style: italic/normal
-font-family: <font_string>
-color: <color_string>
-text-align: left, right, center, justify
-text-decoration: underline, strikethrough, none```
+- font-weight: bold/normal
+- font-style: italic/normal
+- font-family: <font_string>
+- color: <color_string>
+- text-align: left, right, center, justify
+- text-decoration: underline, strikethrough, none```
 
 Font string can be defined as arbitrary string representation of font
-loaded by Scribus. I tested both family name (e.g. DejaVu Sans) and full
-font name (e.g. DejaVu Sans Bold), both should work as far as the font
+loaded by Scribus. I tested both family name (e.g. `DejaVu Sans`) and full
+font name (e.g. `DejaVu Sans Bold`), both should work as far as the font
 is loaded in Scribus.
 
 Color string was kinda blind shooting on my part. Color names defined by
 the document are working and IIRC hex codes are working as well. I think
-I even saw a definition like rgb(255,0,0) to go through and work. If you
+I even saw a definition like `rgb(255,0,0)` to go through and work. If you
 can verify all this, that'd be helpful, I don't have much time left
-these days. One thought: I think that in case of hexa and rgb
+these days. 
+
+One thought: I think that in case of hexa and rgb
 definition, the color integrity might be compromised since I don't
 perform any conversion based on color model. I have no idea whether it's
 done on lower levels. To give you an idea what am I doning in the code,
-I just call font->setColor(value); that's it.
+I just call `font->setColor(value);` that's it.
 
-margin-top, margin-bottom, margin-left, font-size:
-these can have size values defined either as fixed size or relative size
+`margin-top, margin-bottom, margin-left, font-size` : these can have size values defined either as fixed size or relative size
 - XX px - fixed size in points
 - XX pt - fixed size in points
 - XX % - relative size in percentage
@@ -75,7 +76,7 @@ these can have size values defined either as fixed size or relative size
 
 Code-wise, the approach has been changed completely. The visual
 appearance for every element is now stored only in s style string. These
-strings are then parsed and stored in form of stack of gtParagraphStyle
+strings are then parsed and stored in form of stack of `gtParagraphStyle`
 structures which are then pushed/popped as HTML parsing goes on. I hope
 this description is sufficient.
 
