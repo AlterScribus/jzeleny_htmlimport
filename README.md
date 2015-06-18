@@ -1,7 +1,7 @@
 # jzeleny_htmlimport
 refactoring of the HTML import plugin for better styles use
 
-- Original repo : 'public' branch of git://fedorapeople.org/~jzeleny/scribus.git 
+- Original repo : 'public' branch of `git://fedorapeople.org/~jzeleny/scribus.git` 
 - Master mantis URL : http://bugs.scribus.net/view.php?id=11060
 
 Current HTML plugin has several shortcomings related to a limited support of HTML tags. Attached archive contains new implementation of HTML import plugins which adds various new features.
